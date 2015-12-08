@@ -1,0 +1,61 @@
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+<div>
+    <br><br>
+    <h2><r>
+    Job name: {{jobName}}<br>
+    Job description: {{jobDescription}}<br>
+    Job status of: '{{jobStatus}}'<br>
+    Job value: ''{{jobValue}}''<br>
+    <br><br><br></h2></r>
+    <r><h1>Total available: {{jobsCount}} jobs</h1></r>
+    <br><br><br>
+    
+  <!-- Common libs -->
+  <script src="bower_components/underscore/underscore-min.js"></script>
+  <script src="bower_components/bignumber.js/bignumber.js"></script>
+  <script src="bower_components/moment/min/moment.min.js"></script>
+  
+    <!--<script src="lib/web3/dist/web3-light.js"></script>-->
+  <script src="bower_components/custom/web3-light.js"></script>
+  <script src="bower_components/custom/eth-utils.js"></script>
+  <script src="bower_components/custom/func.js"></script>
+
+    <!-- Angular libs -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-cookies/angular-cookies.min.js"></script>
+  <script src="bower_components/angular-ui-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+  
+ <!-- JobMarket app modules -->
+  <script src="js/app.js"></script>
+  <script src="js/routes.js"></script>
+
+  <!-- JobMarket constants -->
+  <script src="js/constants/app.const.js"></script>
+  <script src="js/constants/web3.const.js"></script>
+  <script src="js/constants/contract.const.js"></script>  
+  
+    <!-- JobMarket services -->
+  <script src="js/services/auth.service.js"></script>
+  <script src="js/services/contract.service.js"></script>
+  <script src="js/services/job.service.js"></script>
+  <script src="js/services/jobMarket.service.js"></script>
+  <script src="js/services/web3.service.js"></script>
+  
+    <!-- JobMarket controllers -->
+  <script src="js/controllers/jobs.controller.js"></script>
+  <script src="js/controllers/jobs-list.controller.js"></script>
+
+
+  <script src="controllers/createjob.js"></script>
+  <script src="controllers/findjob.js"></script>
+  <script src="controllers/displayjob.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+    
+</div>
+

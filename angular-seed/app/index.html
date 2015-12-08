@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Job Market</title>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="app.css">
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+    
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div ng-view></div>
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <br>
+
+  <div><f><center><br>Welcome to Job Market<span app-version></f></span></center></div>
+  
+  
+<!--  <div id=secondary>
+     <li><a href="template/login.html">Login</a></li>
+     <br>
+  </div>-->
+  
+  <p>  
+  <margin-button><a href="#/createJob"><img src="img/createjobs.png"></a></margin-button>
+  <margin-button><a href="#/jobs"><img src="img/searchjobs.png"></margin-button></a></p>
+  
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+   <script>document.write('<base href="' + document.location + '" />');</script>
+
+  <!-- Common libs -->
+  <script src="bower_components/underscore/underscore-min.js"></script>
+  <script src="bower_components/bignumber.js/bignumber.js"></script>
+  <script src="bower_components/moment/min/moment.min.js"></script>
+  
+    <!--<script src="lib/web3/dist/web3-light.js"></script>-->
+  <script src="bower_components/custom/web3-light.js"></script>
+  <script src="bower_components/custom/eth-utils.js"></script>
+  <script src="bower_components/custom/func.js"></script>
+
+    <!-- Angular libs -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-cookies/angular-cookies.min.js"></script>
+  <script src="bower_components/angular-ui-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+  
+ <!-- JobMarket app modules -->
+  <script src="js/app.js"></script>
+  <script src="js/routes.js"></script>
+
+  <!-- JobMarket constants -->
+  <script src="js/constants/app.const.js"></script>
+  <script src="js/constants/web3.const.js"></script>
+  <script src="js/constants/contract.const.js"></script>  
+  
+    <!-- JobMarket services -->
+  <script src="js/services/auth.service.js"></script>
+  <script src="js/services/contract.service.js"></script>
+  <script src="js/services/job.service.js"></script>
+  <script src="js/services/jobMarket.service.js"></script>
+  <script src="js/services/web3.service.js"></script>
+  
+    <!-- JobMarket controllers -->
+  <script src="js/controllers/jobs.controller.js"></script>
+  <script src="js/controllers/jobs-list.controller.js"></script>
+
+  <script src="js/controllers/createjob.js"></script>
+  <script src="js/controllers/findjob.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+  
+</body>
+</html>

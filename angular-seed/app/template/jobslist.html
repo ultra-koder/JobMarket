@@ -1,0 +1,60 @@
+
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 3px;
+    text-align: left;
+}
+table#t01 {
+    width: 100%;
+    border-width: 5px;
+    background-color: #f1f1c1;
+}
+f {
+    font-size: 40px;
+    color: gray;
+  }
+num {
+    text-align: right;
+}  
+</style>
+
+<br><br><br>
+<br><br><br>
+<table id=t01>
+  <caption><f>{{jobs.length}} <small> jobs available </small></f></caption>
+  <br><br>
+<br><br><br>
+<tr>
+    <th>Job name</th>
+    <th>Employer</th> 
+    <th>Job description</th> 
+    <th>Status</th>
+    <th>Compensation</th>
+  </tr>
+  
+  <tr ng-repeat="job in jobs">
+    <td>{{ job.name }}</td>
+    <td>{{ job.employer }}</td>
+    <td>{{ job.description }}</td>
+    <td>{{ job.status }}</td>
+    <td>{{ job.value }}</td>
+  </tr>  
+  <tr>
+</table>
+<br><br>
+<div ng-app="myApp" ng-controller="JobsListController">
+<input type="button"  class="margin-right: 10em btn btn pull-right btn-lg" value="Filter" ng-click="">
+<input type="button" class="btn btn pull-right btn-lg" value="Search" ng-click="">
+<input type="button" class="btn btn-primary btn pull-right btn-lg" value="Return" ng-click="return">
+</div>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+
+

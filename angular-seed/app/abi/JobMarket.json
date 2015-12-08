@@ -1,0 +1,250 @@
+[
+  {
+    "constant": false,
+    "inputs": [],
+    "name": "nameRegAddress",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_name",
+        "type": "bytes32"
+      },
+      {
+        "name": "_description",
+        "type": "bytes32"
+      }
+    ],
+    "name": "newJob",
+    "outputs": [
+      {
+        "name": "jobId",
+        "type": "uint256"
+      }
+    ],
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256"
+      }
+    ],
+    "name": "getJobValue",
+    "outputs": [
+      {
+        "name": "value",
+        "type": "uint256"
+      }
+    ],
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "getTotalJobs",
+    "outputs": [
+      {
+        "name": "tJobs",
+        "type": "uint256"
+      }
+    ],
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "getJobs",
+    "outputs": [
+      {
+        "name": "jList",
+        "type": "uint32[]"
+      }
+    ],
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256"
+      }
+    ],
+    "name": "getJobEmployerName",
+    "outputs": [
+      {
+        "name": "jn",
+        "type": "bytes32"
+      }
+    ],
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256"
+      }
+    ],
+    "name": "getJobName",
+    "outputs": [
+      {
+        "name": "jn",
+        "type": "bytes32"
+      }
+    ],
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "name",
+        "type": "bytes32"
+      }
+    ],
+    "name": "named",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256"
+      }
+    ],
+    "name": "getJobStatus",
+    "outputs": [
+      {
+        "name": "status",
+        "type": "uint256"
+      }
+    ],
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "changeOwner",
+    "outputs": [],
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256"
+      }
+    ],
+    "name": "getJobWorkerName",
+    "outputs": [
+      {
+        "name": "jn",
+        "type": "bytes32"
+      }
+    ],
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256"
+      }
+    ],
+    "name": "getJobDescription",
+    "outputs": [
+      {
+        "name": "jd",
+        "type": "bytes32"
+      }
+    ],
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_name",
+        "type": "bytes32"
+      }
+    ],
+    "name": "newEmployer",
+    "outputs": [
+      {
+        "name": "employerId",
+        "type": "uint256"
+      }
+    ],
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "id",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "name",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "name": "description",
+        "type": "bytes32"
+      }
+    ],
+    "name": "NewJob",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "name",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "name": "addr",
+        "type": "address"
+      }
+    ],
+    "name": "NewEmployer",
+    "type": "event"
+  }
+]

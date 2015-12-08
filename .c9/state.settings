@@ -1,0 +1,702 @@
+{
+    "ace": {
+        "search": {
+            "@backwards": "false",
+            "@highlightmatches": "true",
+            "@matchcase": "false",
+            "@preservecase": "false",
+            "@regex": "false",
+            "@wholeword": "false",
+            "@wraparound": "true"
+        }
+    },
+    "breakpoints": {
+        "json()": [
+            {
+                "path": "/angular-seed/app/js/constants/web3.const.js",
+                "line": 2,
+                "column": 0,
+                "text": "web3.const.js",
+                "content": "myApp.constants",
+                "enabled": true
+            },
+            {
+                "path": "/angular-seed/app/js/controllers/jobs-list.controller.js",
+                "line": 34,
+                "column": 12,
+                "text": "jobs-list.controller.js",
+                "content": "            $window.history.back();",
+                "enabled": true
+            }
+        ]
+    },
+    "collab": {
+        "panel": {
+            "chat": {
+                "@closed": false
+            },
+            "members": {
+                "@closed": false
+            },
+            "notifications": {
+                "@closed": true
+            }
+        }
+    },
+    "console": {
+        "@expanded": true,
+        "@height": 280,
+        "@maximized": "false",
+        "json()": {
+            "meta": {
+                "accessList": [
+                    "tab1",
+                    "tab3",
+                    "searchResults"
+                ]
+            },
+            "name": "pane1",
+            "nodes": [
+                {
+                    "type": "tab",
+                    "name": "tab1",
+                    "path": "",
+                    "className": [
+                        "tab1"
+                    ],
+                    "document": {
+                        "filter": true,
+                        "title": "bash - \"3c89c0fe0dc1\"",
+                        "tooltip": "bash - \"3c89c0fe0dc1\"",
+                        "terminal": {
+                            "id": "devel_324",
+                            "cwd": "",
+                            "width": 0,
+                            "height": 0,
+                            "scrollTop": -8
+                        },
+                        "hash": "67452301efcdab8998badcfe10325476c3d2e1f0",
+                        "meta": {},
+                        "changed": false
+                    },
+                    "editorType": "terminal",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab3",
+                    "path": "",
+                    "className": [],
+                    "document": {
+                        "changed": false,
+                        "meta": {},
+                        "filter": true,
+                        "title": "Ethereum Console",
+                        "ethereum-console": {}
+                    },
+                    "editorType": "ethereum-console",
+                    "active": true
+                },
+                {
+                    "type": "tab",
+                    "name": "searchResults",
+                    "path": "/.c9/searchresults",
+                    "className": [
+                        "searchResults"
+                    ],
+                    "document": {
+                        "filter": true,
+                        "title": "searchresults",
+                        "tooltip": "/.c9/searchresults",
+                        "ace": {
+                            "folds": [],
+                            "customSyntax": "c9search",
+                            "scrolltop": 0,
+                            "scrollleft": 0,
+                            "selection": {
+                                "start": {
+                                    "row": 2,
+                                    "column": 18
+                                },
+                                "end": {
+                                    "row": 2,
+                                    "column": 18
+                                },
+                                "isBackwards": false
+                            },
+                            "options": {
+                                "tabSize": 4,
+                                "useSoftTabs": true,
+                                "guessTabSize": false,
+                                "useWrapMode": false,
+                                "wrapToView": true
+                            },
+                            "firstLineState": 0
+                        },
+                        "hash": "681f12b08484908078c9c0fd05a9847c4820b0a8",
+                        "meta": {
+                            "searchResults": true,
+                            "ignoreSave": true,
+                            "timestamp": 1449429640135
+                        },
+                        "changed": false
+                    },
+                    "editorType": "ace",
+                    "active": false
+                }
+            ],
+            "skin": "editor_tab",
+            "skinset": "default",
+            "type": "pane"
+        }
+    },
+    "experiments": {
+        "@@enabled": true,
+        "@git": true,
+        "@plugins": true,
+        "@sdk": true
+    },
+    "ext": {
+        "counters": {
+            "@ace": 2,
+            "@acestatus": 2,
+            "@divider": 5,
+            "@document": 15,
+            "@ethereum-console": 1,
+            "@form": 5,
+            "@immediate": 1,
+            "@menu": 8,
+            "@menuitem": 20,
+            "@pane": 6,
+            "@postmessage": 1,
+            "@preferences": 1,
+            "@preview": 1,
+            "@session": 12,
+            "@tab": 34,
+            "@undoManager": 15,
+            "@welcome": 1
+        }
+    },
+    "findinfiles": {
+        "@console": "true",
+        "@matchcase": "false",
+        "@regex": "false",
+        "@wholeword": "false"
+    },
+    "menus": {
+        "@minimized": "false"
+    },
+    "nak": {
+        "@installed": true
+    },
+    "panecycle": {
+        "json()": [
+            "tab33",
+            "tab14",
+            "tab3",
+            "tab32"
+        ]
+    },
+    "panels": {
+        "@active-left": "tree",
+        "@active-right": "collab",
+        "@width-left": 276,
+        "@width-right": 256,
+        "collab": {
+            "@enabled": "true",
+            "@name": "collab"
+        },
+        "commands.panel": {
+            "@enabled": "true",
+            "@name": "commands.panel"
+        },
+        "debugger": {
+            "@enabled": "true",
+            "@name": "debugger"
+        },
+        "ethergit.ethereum.sandbox.panel": {
+            "@enabled": "true",
+            "@name": "ethergit.ethereum.sandbox.panel"
+        },
+        "navigate": {
+            "@enabled": "true",
+            "@name": "navigate"
+        },
+        "outline": {
+            "@enabled": "true",
+            "@name": "outline"
+        },
+        "scm": {
+            "@enabled": "false",
+            "@name": "scm"
+        },
+        "tree": {
+            "@enabled": "true",
+            "@name": "tree"
+        }
+    },
+    "projecttree": {
+        "@scrollpos": -10,
+        "@showfs": true,
+        "expanded": {
+            "json()": [
+                "/dapp/_pre",
+                "/node_modules/node.js/node_modules",
+                "/dapp/contracts",
+                "/angular-seed/app/bower_components/custom",
+                "/angular-seed/app/components",
+                "/angular-seed/app",
+                "/angular-seed/app/js/services",
+                "/angular-seed/app/js/controllers",
+                "/angular-seed/app/template",
+                "/",
+                "/node_modules/angular",
+                "/angular-seed/app/js/constants",
+                "/angular-seed/app/js"
+            ]
+        }
+    },
+    "recentfiles": {
+        "json()": []
+    },
+    "search-history": {
+        "search": {
+            "json()": [
+                "return",
+                "title",
+                "bootstrap",
+                "angul",
+                "addJob",
+                "createJob",
+                "get",
+                "id",
+                "[id]",
+                "id",
+                "totalJobs",
+                "tonum",
+                "uint32",
+                "getjobname",
+                "jobList",
+                "returns",
+                "totalJobs",
+                "compact",
+                "addu",
+                "Debtors",
+                "setjobname",
+                "event",
+                "description",
+                "name",
+                "description",
+                "sha",
+                "name",
+                "tonumber",
+                "DEFAULT_SEED_HASH",
+                "test",
+                "load",
+                "DEFAULT_GAS_PRICE",
+                "cookies",
+                "ctx",
+                "eth",
+                "web3",
+                "employerList",
+                "seed",
+                "bign",
+                "under",
+                "mb",
+                "bign",
+                "list",
+                "app.",
+                "app.js",
+                "jobIds",
+                "jobids",
+                "entity",
+                "comp"
+            ]
+        },
+        "searchfiles": {
+            "json()": [
+                "index1",
+                "ng-click",
+                "button",
+                "ng-view",
+                "controllers.controller",
+                "routeProvider",
+                "ngRoute",
+                " _.extend($scope",
+                "getJobWorkerName",
+                "getJobEmployerName",
+                "getJobWorkerName",
+                "$q",
+                "ngRoute",
+                "ngSubmit",
+                "ng-controller",
+                "Showing of ",
+                "getJobName",
+                "getjobname",
+                "JobsListController",
+                "getJobStatus",
+                "for(",
+                "for",
+                "JobsController",
+                "JobsListCotroller",
+                "GetJobName",
+                "Web3Service",
+                "Web3",
+                "toAscii",
+                "Web3Service",
+                "getJobName",
+                "nameOf",
+                "getJobName",
+                "eth_getTransactionByHash",
+                "signToPKey",
+                "getTotalJobs",
+                "0xdedb49385ad5b94a16f236a6890cf9e0b1e30392",
+                "0x1cd57aaa814859b3073ddc1b30b0eddd8ac2fdff",
+                "1cd57aaa814859b3073ddc1b30b0eddd8ac2fdff",
+                "Web3",
+                "createTx",
+                "seedHash",
+                "DEFAULT_GAS_PRICE",
+                "70000000000",
+                "70000",
+                "pkey",
+                "gaslimit",
+                "ngCookies",
+                "AuthService",
+                "jobMarket",
+                "AuthService",
+                "JobService",
+                "microBank",
+                "jobsCount",
+                "angular-cookies",
+                "JobsController",
+                "main.html",
+                "angular.module(",
+                "angular.module('myApp'",
+                "mbapp",
+                "mba",
+                "MicroBank",
+                "angular.min",
+                "mbApp",
+                "myApp",
+                "mbApp",
+                "myApp"
+            ]
+        }
+    },
+    "tabs": {
+        "json()": {
+            "focus": "tab33",
+            "nodes": [
+                {
+                    "type": "vsplitbox",
+                    "nodes": [
+                        {
+                            "type": "pane",
+                            "name": "pane4",
+                            "nodes": [
+                                {
+                                    "type": "tab",
+                                    "name": "tab16",
+                                    "path": "/angular-seed/app/js/controllers/jobs-list.controller.js",
+                                    "className": [
+                                        "tab16"
+                                    ],
+                                    "document": {
+                                        "changed": false,
+                                        "meta": {
+                                            "timestamp": 1449432070826
+                                        },
+                                        "filter": true,
+                                        "title": "jobs-list.controller.js",
+                                        "tooltip": "/angular-seed/app/js/controllers/jobs-list.controller.js",
+                                        "ace": {}
+                                    },
+                                    "editorType": "ace",
+                                    "active": false
+                                },
+                                {
+                                    "type": "tab",
+                                    "name": "tab33",
+                                    "path": "",
+                                    "className": [
+                                        "tab33",
+                                        "focus",
+                                        "connecting"
+                                    ],
+                                    "document": {
+                                        "changed": false,
+                                        "meta": {
+                                            "timestamp": 1449522206369
+                                        },
+                                        "filter": true,
+                                        "title": "Terminal",
+                                        "terminal": {
+                                            "id": "devel_430",
+                                            "cwd": "",
+                                            "width": 617,
+                                            "height": 517
+                                        }
+                                    },
+                                    "editorType": "terminal",
+                                    "active": true
+                                }
+                            ],
+                            "height": "74.62351809549068%",
+                            "skin": "editor_tab",
+                            "skinset": "default",
+                            "meta": {
+                                "accessList": [
+                                    "tab33",
+                                    "tab16"
+                                ]
+                            }
+                        },
+                        {
+                            "type": "pane",
+                            "name": "pane0",
+                            "nodes": [
+                                {
+                                    "type": "tab",
+                                    "name": "tab0",
+                                    "path": "/angular-seed/app/js/routes.js",
+                                    "className": [
+                                        "tab0"
+                                    ],
+                                    "document": {
+                                        "changed": false,
+                                        "meta": {
+                                            "timestamp": 1449424216820
+                                        },
+                                        "filter": true,
+                                        "title": "routes.js",
+                                        "tooltip": "/angular-seed/app/js/routes.js",
+                                        "ace": {}
+                                    },
+                                    "editorType": "ace",
+                                    "active": false
+                                },
+                                {
+                                    "type": "tab",
+                                    "name": "tab15",
+                                    "path": "/angular-seed/app/js/controllers/createjob.js",
+                                    "className": [
+                                        "tab15"
+                                    ],
+                                    "document": {
+                                        "changed": false,
+                                        "meta": {
+                                            "timestamp": 1449425991450
+                                        },
+                                        "filter": true,
+                                        "title": "createjob.js",
+                                        "tooltip": "/angular-seed/app/js/controllers/createjob.js",
+                                        "ace": {}
+                                    },
+                                    "editorType": "ace",
+                                    "active": false
+                                },
+                                {
+                                    "type": "tab",
+                                    "name": "tab22",
+                                    "path": "/angular-seed/app/index1.html",
+                                    "className": [
+                                        "tab22"
+                                    ],
+                                    "document": {
+                                        "changed": false,
+                                        "meta": {
+                                            "timestamp": 1449427225315
+                                        },
+                                        "filter": true,
+                                        "title": "index1.html",
+                                        "tooltip": "/angular-seed/app/index1.html",
+                                        "ace": {}
+                                    },
+                                    "editorType": "ace",
+                                    "active": false
+                                },
+                                {
+                                    "type": "tab",
+                                    "name": "tab23",
+                                    "path": "/angular-seed/app/js/services/job.service.js",
+                                    "className": [
+                                        "tab23"
+                                    ],
+                                    "document": {
+                                        "changed": false,
+                                        "meta": {
+                                            "timestamp": 1449427266467
+                                        },
+                                        "filter": true,
+                                        "title": "job.service.js",
+                                        "tooltip": "/angular-seed/app/js/services/job.service.js",
+                                        "ace": {}
+                                    },
+                                    "editorType": "ace",
+                                    "active": false
+                                },
+                                {
+                                    "type": "tab",
+                                    "name": "tab24",
+                                    "path": "/angular-seed/app/js/services/jobMarket.service.js",
+                                    "className": [
+                                        "tab24"
+                                    ],
+                                    "document": {
+                                        "changed": false,
+                                        "meta": {
+                                            "timestamp": 1449287762781
+                                        },
+                                        "filter": true,
+                                        "title": "jobMarket.service.js",
+                                        "tooltip": "/angular-seed/app/js/services/jobMarket.service.js",
+                                        "ace": {}
+                                    },
+                                    "editorType": "ace",
+                                    "active": false
+                                },
+                                {
+                                    "type": "tab",
+                                    "name": "tab26",
+                                    "path": "/angular-seed/app/template/login.html",
+                                    "className": [
+                                        "tab26"
+                                    ],
+                                    "document": {
+                                        "changed": false,
+                                        "meta": {
+                                            "timestamp": 1449428388755
+                                        },
+                                        "filter": true,
+                                        "title": "login.html",
+                                        "tooltip": "/angular-seed/app/template/login.html",
+                                        "ace": {}
+                                    },
+                                    "editorType": "ace",
+                                    "active": false
+                                },
+                                {
+                                    "type": "tab",
+                                    "name": "tab27",
+                                    "path": "/angular-seed/app/index.html",
+                                    "className": [
+                                        "tab27"
+                                    ],
+                                    "document": {
+                                        "changed": false,
+                                        "meta": {
+                                            "timestamp": 1449430079125
+                                        },
+                                        "filter": true,
+                                        "title": "index.html",
+                                        "tooltip": "/angular-seed/app/index.html",
+                                        "ace": {}
+                                    },
+                                    "editorType": "ace",
+                                    "active": false
+                                },
+                                {
+                                    "type": "tab",
+                                    "name": "tab31",
+                                    "path": "/index.html",
+                                    "className": [
+                                        "tab31"
+                                    ],
+                                    "document": {
+                                        "changed": false,
+                                        "meta": {
+                                            "timestamp": 1449430222252
+                                        },
+                                        "filter": true,
+                                        "title": "index.html",
+                                        "tooltip": "/index.html",
+                                        "ace": {}
+                                    },
+                                    "editorType": "ace",
+                                    "active": false
+                                },
+                                {
+                                    "type": "tab",
+                                    "name": "tab32",
+                                    "path": "/README.TXT",
+                                    "className": [
+                                        "tab32"
+                                    ],
+                                    "document": {
+                                        "changed": false,
+                                        "meta": {
+                                            "timestamp": 1449414524099
+                                        },
+                                        "filter": true,
+                                        "title": "README.TXT",
+                                        "tooltip": "/README.TXT",
+                                        "ace": {}
+                                    },
+                                    "editorType": "ace",
+                                    "active": true
+                                }
+                            ],
+                            "skin": "editor_tab",
+                            "skinset": "default",
+                            "meta": {
+                                "accessList": [
+                                    "tab0",
+                                    "tab32",
+                                    "tab15",
+                                    "tab22",
+                                    "tab23",
+                                    "tab24",
+                                    "tab26",
+                                    "tab27",
+                                    "tab31"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "pane",
+                    "name": "pane2",
+                    "nodes": [
+                        {
+                            "type": "tab",
+                            "name": "tab14",
+                            "path": "/angular-seed/app/template/jobslist.html",
+                            "className": [
+                                "tab14",
+                                "changed"
+                            ],
+                            "document": {
+                                "changed": true,
+                                "meta": {
+                                    "timestamp": 1449457456829
+                                },
+                                "filter": true,
+                                "title": "jobslist.html",
+                                "tooltip": "/angular-seed/app/template/jobslist.html",
+                                "ace": {}
+                            },
+                            "editorType": "ace",
+                            "active": true
+                        }
+                    ],
+                    "width": "48.573132135048716%",
+                    "skin": "editor_tab",
+                    "skinset": "default",
+                    "meta": {
+                        "accessList": [
+                            "tab14"
+                        ]
+                    }
+                }
+            ],
+            "type": "hsplitbox"
+        }
+    },
+    "tree_selection": {
+        "json()": [
+            "/index.html"
+        ]
+    }
+}
