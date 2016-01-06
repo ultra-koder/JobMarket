@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Job Market</title>
   <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="css/style.css" rel="stylesheet">
+  <link href="bower_components/angular-material/angular-material.css" rel="stylesheet" />
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
@@ -22,18 +22,18 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
-  <div ng-view></div>
-  
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
   <br>
 
   <div><f><center><br>Welcome to Job Market<span app-version></f></span></center></div>
+  <div ng-view></div>
   
   
-<!--  <div id=secondary>
+  
+  <div id=secondary>
      <li><a href="template/login.html">Login</a></li>
      <br>
-  </div>-->
+  </div>
   
   <p>  
   <margin-button><a href="#/createJob"><img src="img/createjobs.png"></a></margin-button>
@@ -59,7 +59,9 @@
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="bower_components/angular-cookies/angular-cookies.min.js"></script>
   <script src="bower_components/angular-ui-bootstrap/ui-bootstrap-tpls.min.js"></script>
-
+  <script src="bower_components/angular-animate/angular-animate.js" type="text/javascript" ></script>
+  <script src="bower_components/angular-aria/angular-aria.js" type="text/javascript" ></script>
+  <script src="bower_components/angular-material/angular-material.js" type="text/javascript" ></script>
   
  <!-- JobMarket app modules -->
   <script src="js/app.js"></script>

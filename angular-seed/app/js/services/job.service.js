@@ -16,6 +16,12 @@
             getJobEmployerName: getJobEmployerName,
             getJobWorkerName: getJobWorkerName,
             createJob: createJob,
+            createJobWithSkills: createJobWithSkills,
+            newEmployer: newEmployer,
+            getJobTotalSkills: getJobTotalSkills,
+            getSkillName: getSkillName,
+            getJobSkills: getJobSkills,
+            addJobSkill: addJobSkill,
         };
 
         function getJob(id) {
@@ -96,7 +102,7 @@
         
 
         function getTotalJobs() {
-            return mb.withCtx().getTotalJobs();
+            return mb.withCtx().totalJobs();
         }
 
         function getJobName(id) {
@@ -126,6 +132,71 @@
         function createJob(name, description, quantity, compensation) {
             return(mb.withCtx().newJob(name, description));
         }
+        
+        function createJobWithSkills(name, description, skills, quantity, compensation) {
+            mb.withCtx().newJob(name, description)
+                 .then(function(ret) {
+                     getTotalJobs()
+                    .then(function(tJobs) {
+                        
+                    var jobIndex= parseInt(tJobs, 10);                     
+                    var batch = mb.withCtx().batchInvokation();
+                    
+                    _.each(skills, function(skill) {
+                      return(batch.addJobSkill(jobIndex, skill));
+                    });
+                    batch.invoke().then(function() { console.log("Added skills");
+                    });
+                   });
+                 return(ret);
+                 });
+        }
+        
+        
+        function newEmployer(name) {
+            return(mb.withCtx().newEmployer(name));
+        }
+        
+        function getJobTotalSkills(id) {
+            return(mb.withCtx().getJobTotalSkills(id));
+        }
+        
+        function addJobSkill(id, name) {
+            return(mb.withCtx().addJobSkill(id, name));
+        }
+        
+        function getSkillName(id) {
+            return(mb.withCtx().getSkillName(id));
+        }
+        
+        function getJobSkills(id) {
+            var idsDfd= mb.withCtx().getJobSkills(id);
+            return getByIds(idsDfd, getSkillName);
+        }
+        
+        function getByIds(idsDfd, getEntity) {
+            var dfd = $q.defer();
+
+            idsDfd.then(function(ids) {
+                if (_.isEmpty(ids)) {
+                    dfd.resolve([]);
+                    return;
+                }
+
+                var dfds = [];
+                _.each(ids, function(id) {
+                    dfds.push(getEntity(id));
+                });
+
+                $q.all(dfds).then(function(entities) {
+                    dfd.resolve(entities);
+                });
+            });
+
+            return dfd.promise;
+        }
+
+        
     }
 
 })();

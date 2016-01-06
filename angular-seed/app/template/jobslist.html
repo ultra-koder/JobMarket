@@ -1,15 +1,19 @@
-
+<!--
 <style>
 table, th, td {
     border: 1px solid black;
+}
+list_item {
+    border: 1px solid black !important;
 }
 th, td {
     padding: 3px;
     text-align: left;
 }
 table#t01 {
-    width: 100%;
-    border-width: 5px;
+    width: 90%;
+    margin: 5%;
+    border-width: 2px;
     background-color: #f1f1c1;
 }
 f {
@@ -20,9 +24,26 @@ num {
     text-align: right;
 }  
 </style>
+-->
 
-<br><br><br>
-<br><br><br>
+<form ng-app="myApp">
+
+<div ng-cloak="">
+  <md-content>
+    <md-list>
+      <md-subheader>{{jobs.length}} jobs found</md-subheader>
+      <md-list-item class="md-3-line list_item" ng-repeat="job in jobs">
+        <img ng-src="img/new_icon.svg" class="md-avatar" alt="{{job.status}}">
+        <div class="md-list-item-text" layout="column">
+          <h3>{{ job.name }}</h3>
+          <h4>{{ job.employer }}</h4>
+          <p>{{ job.description }}</p>
+        </div>
+      </md-list-item>
+      </md-list>
+  </md-content>
+</div>
+<!--
 <table id=t01>
   <caption><f>{{jobs.length}} <small> jobs available </small></f></caption>
   <br><br>
@@ -44,11 +65,12 @@ num {
   </tr>  
   <tr>
 </table>
+-->
 <br><br>
-<div ng-app="myApp" ng-controller="JobsListController">
-<input type="button"  class="margin-right: 10em btn btn pull-right btn-lg" value="Filter" ng-click="">
-<input type="button" class="btn btn pull-right btn-lg" value="Search" ng-click="">
-<input type="button" class="btn btn-primary btn pull-right btn-lg" value="Return" ng-click="return">
+<div>
+<input type="button"  class="margin-right: 10em btn btn pull-right btn-lg" value="Filter" ng-click="filter()">
+<input type="button" class="btn btn pull-right btn-lg" value="Search" ng-click="search()">
+<input type="button" class="btn btn-primary btn pull-right btn-lg" value="Return" ng-click="return()">
 </div>
 <br><br><br>
 <br><br><br>
@@ -56,5 +78,5 @@ num {
 <br><br><br>
 <br><br><br>
 <br><br><br>
-
+</form>
 

@@ -1,5 +1,25 @@
 /* app css stylesheet */
 
+.list_item {
+    border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+    border-top: 1px solid #d9d9d9;
+    width: 90%;
+    margin-left: 5%;    
+    margin-right: 5%;    
+}
+
+
+h3 {
+  font-weight: bold !important; 
+}
+
+f {
+    font-size: 40px;
+    color: gray;
+  }
+/*
+
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
@@ -40,11 +60,7 @@
     font-weight: bold;
   }
   
-  p {
-    border: 1px solid grey;
-    padding: 10px;
-    margin: 30px;
-  }
+
   r {
     text-align: right;
     margin-right: 30px;
@@ -59,3 +75,4 @@
     text-align: right;
     margin-right: 100px;
   }
+  */

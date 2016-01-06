@@ -124,6 +124,18 @@ myApp.constants
     "type": "function"
   },
   {
+    "constant": true,
+    "inputs": [],
+    "name": "totalJobs",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "type": "function"
+  },
+  {
     "constant": false,
     "inputs": [
       {
@@ -139,7 +151,7 @@ myApp.constants
     "outputs": [
       {
         "name": "jobId",
-        "type": "uint256"
+        "type": "uint32"
       }
     ],
     "type": "function"
@@ -163,12 +175,17 @@ myApp.constants
   },
   {
     "constant": true,
-    "inputs": [],
-    "name": "getTotalJobs",
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256"
+      }
+    ],
+    "name": "getSkillName",
     "outputs": [
       {
-        "name": "tJobs",
-        "type": "uint256"
+        "name": "skillName",
+        "type": "bytes32"
       }
     ],
     "type": "function"
@@ -215,6 +232,23 @@ myApp.constants
       {
         "name": "jn",
         "type": "bytes32"
+      }
+    ],
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "name",
+        "type": "bytes32"
+      }
+    ],
+    "name": "addSkill",
+    "outputs": [
+      {
+        "name": "index",
+        "type": "uint32"
       }
     ],
     "type": "function"
@@ -303,6 +337,56 @@ myApp.constants
     "constant": false,
     "inputs": [
       {
+        "name": "jobID",
+        "type": "uint32"
+      },
+      {
+        "name": "name",
+        "type": "bytes32"
+      }
+    ],
+    "name": "addJobSkill",
+    "outputs": [],
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256"
+      }
+    ],
+    "name": "getJobSkills",
+    "outputs": [
+      {
+        "name": "list",
+        "type": "uint32[]"
+      }
+    ],
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256"
+      }
+    ],
+    "name": "getJobTotalSkills",
+    "outputs": [
+      {
+        "name": "totalSkills",
+        "type": "uint32"
+      }
+    ],
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
         "name": "_name",
         "type": "bytes32"
       }
@@ -358,8 +442,22 @@ myApp.constants
     ],
     "name": "NewEmployer",
     "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "name",
+        "type": "bytes32"
+      }
+    ],
+    "name": "NewSkill",
+    "type": "event"
   }
 ]
+
+
 
 }
     }

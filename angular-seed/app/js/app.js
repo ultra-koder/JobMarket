@@ -3,7 +3,8 @@
 var myApp = angular.module('myApp', [
     'ngRoute',
     'ngCookies',
-
+    'ngMaterial',
+    
     'myApp.services',
     'myApp.controllers',
     'myApp.filters',

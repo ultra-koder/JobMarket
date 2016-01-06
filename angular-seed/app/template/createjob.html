@@ -1,24 +1,59 @@
    <br><br>
     <h1><f><center>Create a new job</center></f></h1>
     <br>  
-  <createf><form ng-app="myApp"  ng-submit="submit()">
+<form ng-app="myApp"  ng-submit="submit()">
     <br>
-    <blockquote>
-    Job name:<br><br>
-    <input type="text" ng-model="job_name" ng-init="job_name='Test'"><br><br>
-    Job description:<br><br>
-    <input type="text" ng-model="job_description"><br><br>
+        <div layout="row" ng-cloak="" class="md-inline-form" flex= "50"  flex-offset="20" flex-gt-xs="">
+          <md-input-container class="md-block" >
+            <label>Job name:</label>
+            <input ng-model="job_name" ng-init="job_name='Test'"> 
+          </md-input-container>
+        </div>
 
-    Urgency:<br><br>
-    <input type="number" value="1" min="1" max="5">
-    <br><br>
-    Compensation:<br><br>
-    <input type="number" value="100"><br><br>
-    <br><br>
+        <div layout="row">
+          <md-input-container class="md-block" flex-offset="20" flex= "70" flex-gt-sm="">
+            <label>Job description:</label>
+            <input ng-model="job_description">
+          </md-input-container>
+        </div>
+        
+        <div layout="row">
+          <md-input-container class="md-block" flex-offset="20" flex= "70" flex-gt-sm="">
+            <label>Required skills:</label>
+            <md-chips ng-model="job_skills"></md-chips>
+          </md-input-container>
+        </div>
 
-    <input type="submit" class="btn-lg pull-center" id= "submit" value= "Create job" font-size=30px>
-    </blockquote>
+        
+        <div layout-gt-xs="row" class="md-inline-form">
+             <md-input-container class="md-block" flex-gt-xs flex= "30" flex-offset="20">
+                <label>Location:</label>
+            <input ng-model="job_location">
+              </md-input-container>
+
+            <md-datepicker flex-offset="10" flex= "30" flex-gt-xs="" ng-model="job_date" md-placeholder="Completion date"></md-datepicker>
+        </div>                  
+        <div layout="row" >
+             <md-input-container class="md-block" flex= "30" flex-offset="20" flex-gt-sm="">
+                <label>Urgency:</label>
+                <input type="number" value="1" min="1" max="5">
+              </md-input-container>
+
+            <md-input-container class="md-block" flex-offset="10" flex= "30" flex-gt-sm="">
+              <label>Compensation:</label>
+              <input type="number" value="100"><br><br>
+              </md-input-container>
+          </div>                  
+        <br><br>
+
+    <input type="submit" class="md-raised btn-lg pull-center" id= "submit" flex-offset="20" flex-gt-sm="" value= "Create job" font-size=30px>
+    </div>
     
     <br><br><br>
     <br><br><br>
-    </form></createf>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    </form>
